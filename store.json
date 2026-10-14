@@ -1,0 +1,266 @@
+{
+  "users": [
+    {
+      "id": "demo-user-123",
+      "name": "Sarah Jenkins",
+      "email": "sarah.jenkins@healthai.demo",
+      "password": "password123",
+      "role": "patient",
+      "age": 34,
+      "gender": "Female",
+      "bloodType": "A+",
+      "height": "168 cm",
+      "weight": "64 kg",
+      "emergencyContact": {
+        "name": "David Jenkins",
+        "relation": "Spouse",
+        "phone": "+1 (555) 234-5678"
+      },
+      "consentGiven": true,
+      "createdAt": "2026-10-14T05:54:52.314Z"
+    }
+  ],
+  "vitals": {
+    "demo-user-123": [
+      {
+        "id": "v1",
+        "type": "blood_pressure",
+        "value": "120/78",
+        "unit": "mmHg",
+        "status": "Normal",
+        "timestamp": "2026-10-12T05:54:52.315Z",
+        "notes": "Resting morning reading"
+      },
+      {
+        "id": "v2",
+        "type": "heart_rate",
+        "value": "72",
+        "unit": "bpm",
+        "status": "Optimal",
+        "timestamp": "2026-10-12T05:54:52.315Z",
+        "notes": "Resting pulse"
+      },
+      {
+        "id": "v3",
+        "type": "blood_glucose",
+        "value": "94",
+        "unit": "mg/dL",
+        "status": "Normal",
+        "timestamp": "2026-10-13T05:54:52.315Z",
+        "notes": "Fasting glucose"
+      },
+      {
+        "id": "v4",
+        "type": "blood_pressure",
+        "value": "118/76",
+        "unit": "mmHg",
+        "status": "Normal",
+        "timestamp": "2026-10-14T05:54:52.315Z",
+        "notes": "Post light jog"
+      },
+      {
+        "id": "v5",
+        "type": "weight",
+        "value": "64.0",
+        "unit": "kg",
+        "status": "Stable",
+        "timestamp": "2026-10-14T05:54:52.315Z",
+        "notes": "BMI 22.7 (Healthy)"
+      }
+    ]
+  },
+  "medications": {
+    "demo-user-123": [
+      {
+        "id": "m1",
+        "name": "Albuterol Inhaler (Ventolin)",
+        "dosage": "90 mcg, 2 puffs",
+        "frequency": "As needed for wheezing/exercise",
+        "purpose": "Mild Asthma",
+        "prescriber": "Dr. Robert Chen, Pulmonology",
+        "active": true,
+        "refillDate": "2026-11-15"
+      },
+      {
+        "id": "m2",
+        "name": "Vitamin D3 & K2",
+        "dosage": "2000 IU",
+        "frequency": "Once daily with breakfast",
+        "purpose": "Bone & Immune support",
+        "prescriber": "Self / Recommended by PCP",
+        "active": true,
+        "refillDate": "2026-12-01"
+      }
+    ]
+  },
+  "allergies": {
+    "demo-user-123": [
+      {
+        "id": "a1",
+        "allergen": "Penicillin",
+        "severity": "Severe",
+        "reaction": "Hives, mild facial swelling",
+        "diagnosedYear": "2018"
+      },
+      {
+        "id": "a2",
+        "allergen": "Tree Nuts (Walnuts, Pecans)",
+        "severity": "Moderate",
+        "reaction": "Oral tingling, digestive upset",
+        "diagnosedYear": "2020"
+      }
+    ]
+  },
+  "appointments": {
+    "demo-user-123": [
+      {
+        "id": "apt-1",
+        "providerName": "Dr. Robert Chen",
+        "specialty": "Pulmonology & Respiratory Care",
+        "facility": "Metropolitan Medical Center",
+        "dateTime": "2026-10-18T05:54:52.315Z",
+        "type": "In-Person",
+        "reason": "Annual asthma review and spirometry checkup",
+        "status": "Confirmed"
+      },
+      {
+        "id": "apt-2",
+        "providerName": "Dr. Elena Vance",
+        "specialty": "General Practice / Preventive Care",
+        "facility": "St. Jude Community Clinic",
+        "dateTime": "2026-10-28T05:54:52.315Z",
+        "type": "Telehealth",
+        "reason": "Routine annual bloodwork review and wellness consultation",
+        "status": "Requested"
+      }
+    ]
+  },
+  "wellness": {
+    "demo-user-123": {
+      "waterIntakeGlasses": 6,
+      "waterTargetGlasses": 8,
+      "sleepHours": 7.5,
+      "sleepQuality": "Good",
+      "steps": 8420,
+      "stepsTarget": 10000,
+      "mood": "Energized",
+      "habits": [
+        {
+          "id": "h1",
+          "name": "Morning 15-min Stretch",
+          "completed": true
+        },
+        {
+          "id": "h2",
+          "name": "Take Daily Vitamin D",
+          "completed": true
+        },
+        {
+          "id": "h3",
+          "name": "Drink 2L Water",
+          "completed": false
+        },
+        {
+          "id": "h4",
+          "name": "No Screens 30m Before Bed",
+          "completed": false
+        }
+      ],
+      "lastUpdated": "2026-10-14T05:54:52.315Z"
+    }
+  },
+  "symptomChecks": {
+    "demo-user-123": [
+      {
+        "id": "sc-1791957414792",
+        "timestamp": "2026-10-14T05:56:54.792Z",
+        "symptoms": [
+          "Mild dry cough",
+          "Slight throat irritation"
+        ],
+        "duration": "2 days",
+        "severity": 3,
+        "triageLevel": "Self-Care & Home Monitoring",
+        "isEmergency": false,
+        "summary": "Self-Care & Home Monitoring. Evaluated Mild dry cough, Slight throat irritation.",
+        "recommendations": [
+          "Supportive home care: ensure adequate hydration and restorative rest.",
+          "Consult a licensed pharmacist regarding safe over-the-counter symptom management options.",
+          "Seek professional medical evaluation if symptoms persist past 5-7 days or worsen."
+        ]
+      },
+      {
+        "id": "sc-1791957414774",
+        "timestamp": "2026-10-14T05:56:54.774Z",
+        "symptoms": [
+          "Crushing chest pain radiating to left arm",
+          "Shortness of breath"
+        ],
+        "duration": "30 mins",
+        "severity": 9,
+        "triageLevel": "EMERGENCY - Immediate Medical Attention Required",
+        "isEmergency": true,
+        "summary": "HealthAI has detected symptoms consistent with a potential medical emergency (Possible Acute Coronary Syndrome / Heart Attack). Prompt clinical evaluation is essential.",
+        "recommendations": [
+          "Call local emergency services (911 / 112) or go to the nearest emergency room immediately.",
+          "Do not drive yourself—request an ambulance so paramedics can provide immediate care en route.",
+          "Remain calm and stay seated in an accessible location."
+        ]
+      },
+      {
+        "id": "sc-1",
+        "timestamp": "2026-10-11T05:54:52.315Z",
+        "symptoms": [
+          "Mild dry cough",
+          "Slight throat irritation"
+        ],
+        "duration": "2 days",
+        "severity": 3,
+        "triageLevel": "Self-Care & Observation",
+        "summary": "Likely mild seasonal viral irritation or allergic pharyngitis. No red flag symptoms detected.",
+        "recommendations": [
+          "Stay well hydrated with warm fluids and herbal tea with honey",
+          "Use saline nasal spray or humidifier at bedtime",
+          "Monitor temperature if symptoms worsen or fever develops"
+        ]
+      }
+    ]
+  },
+  "chatHistory": {
+    "demo-user-123": [
+      {
+        "id": "ch-1",
+        "role": "user",
+        "text": "What are the main warning signs of dehydration during hot weather?",
+        "timestamp": "2026-10-13T05:54:52.315Z"
+      },
+      {
+        "id": "ch-2",
+        "role": "assistant",
+        "text": "Common signs of mild to moderate dehydration include dry mouth, dark yellow or amber urine, fatigue, mild dizziness when standing, and headache.\n\nKey preventive measures:\n- Drink water steadily before feeling thirsty.\n- Consume electrolyte-rich fluids (coconut water or oral rehydration solutions) if sweating heavily.\n\n⚠️ Seek immediate medical care if you experience confusion, extreme lethargy, inability to keep fluids down, or cessation of sweating in hot conditions.",
+        "timestamp": "2026-10-13T05:54:52.315Z",
+        "isAi": true
+      },
+      {
+        "id": "msg-1791957414746",
+        "timestamp": "2026-10-14T05:56:54.746Z",
+        "role": "user",
+        "text": "Explain what normal blood pressure numbers are",
+        "isAi": false
+      },
+      {
+        "id": "msg-1791957414749",
+        "timestamp": "2026-10-14T05:56:54.749Z",
+        "role": "assistant",
+        "text": "**Understanding Blood Pressure & Healthy Range:**\n\nBlood pressure measures the force of circulating blood against your arterial walls:\n- **Normal Range:** Less than 120/80 mmHg (Systolic / Diastolic).\n- **Elevated:** Systolic 120–129 mmHg and Diastolic < 80 mmHg.\n- **Hypertension Stage 1:** 130–139 mmHg systolic or 80–89 mmHg diastolic.\n- **Hypertension Stage 2:** 140/90 mmHg or higher.\n\n**Evidence-Based Lifestyle Strategies to Support Healthy Blood Pressure:**\n1. **DASH Diet:** Emphasize leafy greens, berries, potassium-rich foods, and limit sodium to < 2,300 mg/day.\n2. **Regular Aerobic Activity:** Aim for at least 150 minutes of moderate aerobic exercise weekly.\n3. **Stress Reduction:** Techniques such as diaphragmatic breathing, meditation, and quality sleep.\n4. **Hydration & Limiting Alcohol:** Drink adequate water and moderate or eliminate alcohol intake.\n\n---\n*Disclaimer: HealthAI provides general informational guidance and is not a substitute for professional medical diagnosis or treatment.*",
+        "isAi": true,
+        "isEmergency": false,
+        "suggestedFollowUps": [
+          "How often should I measure my blood pressure at home?",
+          "What foods are highest in potassium?",
+          "What is a hypertensive crisis?"
+        ]
+      }
+    ]
+  }
+}
